@@ -122,7 +122,7 @@ body {
   }
 }
 
-.btn__footer, .btn__header {
+.btn__header, .btn__learn-more {
   font-style: normal;
   font-weight: 800;
   font-size: 1.125rem;
@@ -186,12 +186,11 @@ body {
 }
 .btn__header {
   background: #9C69E2;
-  color: #FFFFFF;
-  width: 10.625rem;
-  height: 3.75rem;
 }
-.btn__footer {
+.btn__learn-more {
   background: #F063B8;
+}
+.btn__header, .btn__learn-more {
   color: #FFFFFF;
   width: 10.625rem;
   height: 3.75rem;
@@ -771,6 +770,11 @@ body {
   line-height: 180%;
   letter-spacing: 0.01em;
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .footer__address {
+    text-align: center;
+  }
+}
 .footer__btn img {
   margin-left: 1.25rem;
   vertical-align: middle;
@@ -781,6 +785,22 @@ body {
   width: 70%;
   margin: 9.375rem 0 5.5625rem 0;
   justify-content: space-between;
+}
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .footer__bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .footer__bottom {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .footer__bottom {
+    flex-wrap: nowrap;
+  }
 }
 .footer__contact {
   width: 20%;
@@ -795,6 +815,11 @@ body {
   letter-spacing: 0.01em;
   color: #212353;
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .footer__contact--email {
+    text-align: center;
+  }
+}
 .footer__contact--phone {
   font-family: "Avenir", "Helvetica", sans-serif;
   font-style: normal;
@@ -803,6 +828,11 @@ body {
   line-height: 180%;
   letter-spacing: 0.01em;
   color: #212353;
+}
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .footer__contact--phone {
+    text-align: center;
+  }
 }
 .footer__information {
   width: 50%;
@@ -845,6 +875,16 @@ body {
 .footer__nav--support {
   width: 10rem;
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .footer__nav {
+    margin-top: 9.375rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .footer__nav {
+    width: 55%;
+  }
+}
 .footer__trial {
   margin-top: 6.25rem;
   display: flex;
@@ -857,6 +897,30 @@ body {
 }
 .footer__trial button {
   margin-left: 1.875rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .social img {
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .social img {
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .social img {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: auto;
+  }
 }
 
 .social:not(:last-child) {
