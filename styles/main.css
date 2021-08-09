@@ -526,10 +526,10 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   .main__overview {
     height: 58rem;
+    width: 75%;
     background-size: 75%;
     background-position-x: 50%;
     background-position-y: bottom;
-    width: 75%;
     text-align: center;
   }
   .main__overview h2 {
@@ -550,11 +550,23 @@ body {
     background-position-y: bottom;
     text-align: center;
   }
+  .main__overview h2 {
+    margin: 5rem auto 0;
+    width: 60%;
+  }
+  .main__overview p {
+    margin: 2.5rem auto;
+    width: 60%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .main__overview {
     height: 62rem;
     width: 80%;
+    background-size: 75%;
+    background-position-x: 50%;
+    background-position-y: bottom;
+    text-align: center;
   }
   .main__overview h2 {
     width: 60%;
